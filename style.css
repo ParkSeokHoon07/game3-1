@@ -1,0 +1,24 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background: #0f1220;
+  color: #e6e8f0;
+  display: grid;
+  place-items: center;
+}
+.app { width: min(92vw, 540px); }
+h1 { margin: 24px 0 8px; font-size: 28px; letter-spacing: 0.5px; }
+.hud { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.score { font-weight: 600; }
+.controls { display: flex; gap: 8px; }
+button { cursor: pointer; border: 0; background: #1b203a; color: #e6e8f0; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
+button:active { transform: translateY(1px); }
+.board-wrap { margin-top: 12px; background: #171a2d; border-radius: 12px; padding: 12px; box-shadow: 0 0 0 1px #1e223f inset; }
+#board { display: block; width: 100%; height: auto; border-radius: 8px; }
+.touch { display: grid; place-items: center; gap: 8px; margin-top: 12px; }
+.touch .row { display: flex; gap: 8px; }
+.touch button { width: 64px; height: 48px; }
+@media (hover: hover) and (pointer: fine) { .touch { display: none; } }

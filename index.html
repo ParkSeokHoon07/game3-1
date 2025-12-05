@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Snake</h1>
+    <div class="hud">
+      <div class="score">점수 <span id="score">0</span></div>
+      <div class="score">최고 <span id="high">0</span></div>
+      <div class="controls">
+        <button id="restart">다시 시작</button>
+        <button id="pause">일시정지</button>
+      </div>
+    </div>
+    <div class="board-wrap">
+      <canvas id="board"></canvas>
+    </div>
+    <div class="touch">
+      <button data-dir="up">▲</button>
+      <div class="row">
+        <button data-dir="left">◀</button>
+        <button data-dir="down">▼</button>
+        <button data-dir="right">▶</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
